@@ -32,12 +32,15 @@ Each skill maintains its own independent version. Use this matrix to understand 
 
 ## [Unreleased]
 
+## Released Versions
+
+## [1.0.11] - 2026-03-13
+
 ### archive
 #### [1.1.0] - 2026-03-13
 - **Added**: Claude Code / Droid plugin support (`.factory-plugin/plugin.json`)
 - **Added**: `hooks/hooks.json` — `SessionStart` hook auto-loads `.archive/MEMORY.md` into session context when plugin is installed, enabling cross-session knowledge reuse without manual configuration
-
-## Released Versions
+- **Added**: `hooks/load-memory.py` — supports `FACTORY_PROJECT_DIR`, `CLAUDE_PROJECT_DIR`, and `cwd()` fallback for cross-platform compatibility
 
 ## [1.0.10] - 2026-02-23
 
